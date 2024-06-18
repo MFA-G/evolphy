@@ -2,11 +2,12 @@
 
 import 'package:evolphy/pages/forumPage.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttericon/iconic_icons.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-import 'pages/modulPage.dart';
 import 'pages/berandaPage/berandaPage.dart';
 import 'pages/latihanPage.dart';
+import 'pages/modulPage.dart';
 import 'pages/profilPage.dart';
 
 void main() {
@@ -109,11 +110,15 @@ class _MyAppState extends State<MyApp> {
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             iconSize: 24,
             tabs: [
-              GButton(icon: Icons.home, text: "Beranda"),
-              GButton(icon: Icons.book_outlined, text: "Modul"),
-              GButton(icon: Icons.home, text: "Latihan"),
-              GButton(icon: Icons.chat_bubble_outline, text: "Forum"),
-              GButton(icon: Icons.person_outline, text: "Profil"),
+              GButton(
+                icon: Icons.home_outlined,
+                text: "Beranda",
+                iconSize: 26,
+              ),
+              GButton(icon: Iconic.book_open, text: "Modul"),
+              GButton(icon: Icons.timeline, text: "Latihan"),
+              GButton(icon: Icons.chat_outlined, text: "Forum"),
+              GButton(icon: Icons.person, text: "Profil"),
             ],
           ),
         ),
